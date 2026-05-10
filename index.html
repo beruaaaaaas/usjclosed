@@ -325,6 +325,7 @@ line-height: 2.2;
 
 </div>
 <script>
+// 今日の日付をブラウザから取得
 const todayStr = (function() {
   const d = new Date();
   const y = d.getFullYear();
@@ -362,7 +363,7 @@ subs: [
 { name: ‘クッキーモンスター・スライド’, desc: ‘クッキーモンスターの大きな口をイメージした滑り台アクティビティ。クッキーの敷物をお尻に敷いてベロをイメージした面を滑り降りる。大人と一緒のほうが勢いが出てよく滑ると評判だった。’ },
 { name: ‘エルモのイマジネーション・プレイランド’, desc: ‘エルモのバブルバブルを含む大型屋内プレイゾーン。全6種のアトラクションと遊具を内包。床は柔らかい素材で転倒しても安心な設計。上階は貝やサンゴで飾られ、ゆらめく照明で水中にいるような雰囲気を演出していた。’ },
 { name: ‘ウォーター・ガーデン’, desc: ‘地面から水が飛び出す噴水や滝など、水と触れ合いながら遊べる屋外プレイエリア。3〜9歳推奨。夏は水に濡れながら大はしゃぎできる子ども人気No.1スポットだった。’ },
-{ name: ‘アビーのマジカル・ツリー’, desc: ‘目の前に広がるジャングルジム型アトラクション。6〜12歳向け。ロープや登り棒、滑り台が連なる本格的な造りで、アビーの木を探検できた。’ },
+{ name: ‘アビーのマジカル・ツリー’, desc: ‘目の前にに広がるジャングルジム型アトラクション。6〜12歳向け。ロープや登り棒、滑り台が連なる本格的な造りで、アビーの木を探検できた。’ },
 { name: ‘アビーのマジカル・パーティ’, desc: ‘大きな星型のブロックやバルーンを使って自由に遊ぶ3〜6歳向けの屋内プレイランド。きらびやかなホールがアビーの魔法でデコレーションされ、ブロックに登ったりバルーンを投げたりして体を動かせた。’ },
 { name: ‘モッピーのラッキー・ダンス・パーティ’, desc: ‘ユニバーサル・ワンダーランド唯一のショー形式アトラクションで、一日に数回開催。DJが教えてくれるダンスをみんなで一緒に踊り、元気よく踊れるとご褒美がもらえる参加型ショー。’ },
 { name: ‘エルモのリトルドライブ’, desc: ‘エルモやセサミストリートのキャラクターを模したゴーカートに乗り、運転を体験できるゴーカート型アトラクション。ビッグドライブとは異なりコロナ禍以降も運営され5月10日にクローズ。’ },
@@ -515,12 +516,12 @@ document.getElementById(‘filters’).innerHTML = AREAS.map(a =>
 }
 
 function buildStats() {
-const total = DATA.reduce((s, d) => s + 1 + d.subs.length, 0);
+const total = DATA.length;
 const days  = DATA.map(d=>daysSince(d.closeDate));
-const avg   = Math.round(days.reduce((s,d)=>s+d,0)/days.length);
+const avg   = Math.round(days.reduce((s,d)=>s+d,0)/total);
 const mx    = Math.max(…days);
 const todayCnt = days.filter(d=>d===0).length;
-document.getElementById(‘stats-wrap’).innerHTML = `<div class="stat"><div class="stat-n">${total}</div><div class="stat-l">閉幕数</div></div><div class="stat"><div class="stat-n">${mx.toLocaleString()}</div><div class="stat-l">最長経過(日)</div></div><div class="stat"><div class="stat-n">${avg.toLocaleString()}</div><div class="stat-l">平均経過(日)</div></div><div class="stat"><div class="stat-n" style="color:var(--pink)">${todayCnt}</div><div class="stat-l">本日クローズ🎗</div></div>`;
+document.getElementById(‘stats-wrap’).innerHTML = `<div class="stat"><div class="stat-n">${total}</div><div class="stat-l">閉幕数</div></div> <div class="stat"><div class="stat-n">${mx.toLocaleString()}</div><div class="stat-l">最長経過(日)</div></div> <div class="stat"><div class="stat-n">${avg.toLocaleString()}</div><div class="stat-l">平均経過(日)</div></div> <div class="stat"><div class="stat-n" style="color:var(--pink)">${todayCnt}</div><div class="stat-l">本日クローズ🎗</div></div>`;
 }
 
 function fmtD(s){ return s.replace(/-/g,’/’); }
@@ -564,9 +565,24 @@ if(isToday){
   numBlock = `<div class="days-n">${days.toLocaleString()}</div><div class="days-l">DAYS AGO</div><div class="years-l">${yr}年前</div>`;
 }
 
-const subsHtml = d.subs.length ? `<div class="sub-list">${d.subs.map(s=>`<div class="sub-item"><b>▸ ${s.name}</b><span>${s.desc}</span></div>`).join('')}</div>` : '';
+const subsHtml = d.subs.length ? `<div class="sub-list">${
+  d.subs.map(s=>`<div class="sub-item"><b>▸ ${s.name}</b><span>${s.desc}</span></div>`).join('')
+}</div>` : '';
 
-return `<div class="card ${cls}" onclick="this.classList.toggle('open')"><div class="card-top"><div><div class="card-era"><span>${d.area}</span><span class="tag">${rt}</span>${badge}</div><div class="card-name">${d.name}</div><div class="card-date">クローズ：<span class="close-d">${fmtD(d.closeDate)}（${wday(d.closeDate)}）</span></div></div><div class="card-right">${numBlock}</div></div><div class="card-detail"><div class="detail-inner"><p>${d.overview}</p>${subsHtml}</div></div><div class="expand-hint">▼ タップで詳細・アトラクション一覧</div></div>`;
+return `<div class="card ${cls}" onclick="this.classList.toggle('open')">
+  <div class="card-top">
+    <div>
+      <div class="card-era"><span>${d.area}</span><span class="tag">${rt}</span>${badge}</div>
+      <div class="card-name">${d.name}</div>
+      <div class="card-date">クローズ：<span class="close-d">${fmtD(d.closeDate)}（${wday(d.closeDate)}）</span></div>
+    </div>
+    <div class="card-right">${numBlock}</div>
+  </div>
+  <div class="card-detail">
+    <div class="detail-inner"><p>${d.overview}</p>${subsHtml}</div>
+  </div>
+  <div class="expand-hint">▼ タップで詳細・アトラクション一覧</div>
+</div>`;
 ```
 
 }).join(’’);
