@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -44,253 +45,254 @@ body::before {
 }
 
 header {
-  text-align: center;
-  padding: 2.5rem 0 2rem;
-  border-bottom: 1px solid var(--gold-dim);
-  margin-bottom: 2rem;
+text-align: center;
+padding: 2.5rem 0 2rem;
+border-bottom: 1px solid var(–gold-dim);
+margin-bottom: 2rem;
 }
 .header-label {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 0.4em;
-  font-size: 0.72rem;
-  color: var(--gold);
-  margin-bottom: 0.7rem;
+font-family: ‘Bebas Neue’, sans-serif;
+letter-spacing: 0.4em;
+font-size: 0.72rem;
+color: var(–gold);
+margin-bottom: 0.7rem;
 }
 h1 {
-  font-family: 'Noto Serif JP', serif;
-  font-size: clamp(1.4rem, 4vw, 2rem);
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+font-family: ‘Noto Serif JP’, serif;
+font-size: clamp(1.4rem, 4vw, 2rem);
+font-weight: 300;
+letter-spacing: 0.12em;
+line-height: 1.5;
+margin-bottom: 0.5rem;
 }
-h1 em { color: var(--gold-light); font-style: normal; font-weight: 700; }
-.header-sub { font-size: 0.73rem; color: var(--text-dim); letter-spacing: 0.06em; }
+h1 em { color: var(–gold-light); font-style: normal; font-weight: 700; }
+.header-sub { font-size: 0.73rem; color: var(–text-dim); letter-spacing: 0.06em; }
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border: 1px solid var(--gold-dim);
-  margin-bottom: 1.8rem;
-  background: var(--surface);
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+border: 1px solid var(–gold-dim);
+margin-bottom: 1.8rem;
+background: var(–surface);
 }
 .stat {
-  padding: 1rem 0.5rem;
-  text-align: center;
-  border-right: 1px solid var(--gold-dim);
+padding: 1rem 0.5rem;
+text-align: center;
+border-right: 1px solid var(–gold-dim);
 }
 .stat:last-child { border-right: none; }
-.stat-n { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--gold); line-height: 1; }
-.stat-l { font-size: 0.62rem; color: var(--text-dim); letter-spacing: 0.06em; margin-top: 0.2rem; }
+.stat-n { font-family: ‘Bebas Neue’, sans-serif; font-size: 1.8rem; color: var(–gold); line-height: 1; }
+.stat-l { font-size: 0.62rem; color: var(–text-dim); letter-spacing: 0.06em; margin-top: 0.2rem; }
 
 .controls {
-  display: flex;
-  gap: 0.7rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
+display: flex;
+gap: 0.7rem;
+margin-bottom: 1rem;
+flex-wrap: wrap;
+align-items: center;
 }
 .search-box {
-  flex: 1;
-  min-width: 180px;
-  background: var(--surface);
-  border: 1px solid var(--gold-dim);
-  color: var(--text);
-  padding: 0.55rem 0.9rem;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.8rem;
-  outline: none;
-  letter-spacing: 0.04em;
-  transition: border-color 0.2s;
+flex: 1;
+min-width: 180px;
+background: var(–surface);
+border: 1px solid var(–gold-dim);
+color: var(–text);
+padding: 0.55rem 0.9rem;
+font-family: ‘Noto Sans JP’, sans-serif;
+font-size: 0.8rem;
+outline: none;
+letter-spacing: 0.04em;
+transition: border-color 0.2s;
 }
-.search-box:focus { border-color: var(--gold); }
+.search-box:focus { border-color: var(–gold); }
 .filter-wrap { display: flex; gap: 0.35rem; flex-wrap: wrap; }
 .fbtn {
-  background: var(--surface);
-  border: 1px solid var(--gold-dim);
-  color: var(--text-dim);
-  padding: 0.45rem 0.8rem;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.7rem;
-  cursor: pointer;
-  transition: all 0.15s;
-  white-space: nowrap;
-  letter-spacing: 0.04em;
+background: var(–surface);
+border: 1px solid var(–gold-dim);
+color: var(–text-dim);
+padding: 0.45rem 0.8rem;
+font-family: ‘Noto Sans JP’, sans-serif;
+font-size: 0.7rem;
+cursor: pointer;
+transition: all 0.15s;
+white-space: nowrap;
+letter-spacing: 0.04em;
 }
-.fbtn:hover, .fbtn.on { background: var(--gold-dim); border-color: var(--gold); color: var(--gold-light); }
+.fbtn:hover, .fbtn.on { background: var(–gold-dim); border-color: var(–gold); color: var(–gold-light); }
 
 .sort-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 1.2rem;
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  letter-spacing: 0.05em;
+display: flex;
+align-items: center;
+gap: 0.4rem;
+margin-bottom: 1.2rem;
+font-size: 0.7rem;
+color: var(–text-dim);
+letter-spacing: 0.05em;
 }
 .sbtn {
-  background: none; border: none;
-  color: var(--text-dim);
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.7rem;
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  border-bottom: 1px solid transparent;
-  transition: all 0.15s;
+background: none; border: none;
+color: var(–text-dim);
+font-family: ‘Noto Sans JP’, sans-serif;
+font-size: 0.7rem;
+cursor: pointer;
+padding: 0.25rem 0.5rem;
+border-bottom: 1px solid transparent;
+transition: all 0.15s;
 }
-.sbtn.on { color: var(--gold); border-color: var(--gold); }
+.sbtn.on { color: var(–gold); border-color: var(–gold); }
 
-.count-line { font-size: 0.7rem; color: var(--text-dim); margin-bottom: 0.8rem; letter-spacing: 0.05em; }
-.count-line b { color: var(--gold); font-family: 'Bebas Neue', sans-serif; font-size: 1rem; font-weight: normal; }
+.count-line { font-size: 0.7rem; color: var(–text-dim); margin-bottom: 0.8rem; letter-spacing: 0.05em; }
+.count-line b { color: var(–gold); font-family: ‘Bebas Neue’, sans-serif; font-size: 1rem; font-weight: normal; }
 
 .cards { display: flex; flex-direction: column; gap: 1px; }
 
 .card {
-  background: var(--surface);
-  border-left: 3px solid var(--gold-dim);
-  overflow: hidden;
-  cursor: pointer;
-  transition: border-color 0.15s;
+background: var(–surface);
+border-left: 3px solid var(–gold-dim);
+overflow: hidden;
+cursor: pointer;
+transition: border-color 0.15s;
 }
-.card:hover { border-left-color: var(--gold); }
+.card:hover { border-left-color: var(–gold); }
 
-.card.cl-today   { border-left-color: var(--pink); animation: todayPulse 3s ease-in-out 0.3s infinite; }
-.card.cl-recent  { border-left-color: var(--green); }
-.card.cl-mid     { border-left-color: var(--gold); }
-.card.cl-old     { border-left-color: var(--orange); }
-.card.cl-ancient { border-left-color: var(--red); }
+.card.cl-today   { border-left-color: var(–pink); animation: todayPulse 3s ease-in-out 0.3s infinite; }
+.card.cl-recent  { border-left-color: var(–green); }
+.card.cl-mid     { border-left-color: var(–gold); }
+.card.cl-old     { border-left-color: var(–orange); }
+.card.cl-ancient { border-left-color: var(–red); }
 
 @keyframes todayPulse {
-  0%,100% { box-shadow: none; }
-  50%      { box-shadow: inset 3px 0 24px rgba(224,80,122,0.22); }
+0%,100% { box-shadow: none; }
+50%      { box-shadow: inset 3px 0 24px rgba(224,80,122,0.22); }
 }
 
 .card-top {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.5rem 1rem;
-  padding: 1.1rem 1.2rem;
-  align-items: center;
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 0.5rem 1rem;
+padding: 1.1rem 1.2rem;
+align-items: center;
 }
 .card-era {
-  font-size: 0.62rem;
-  color: var(--text-dim);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  flex-wrap: wrap;
+font-size: 0.62rem;
+color: var(–text-dim);
+letter-spacing: 0.1em;
+margin-bottom: 0.25rem;
+display: flex;
+align-items: center;
+gap: 0.4rem;
+flex-wrap: wrap;
 }
 .tag {
-  background: var(--surface2);
-  border: 1px solid var(--gold-dim);
-  color: var(--gold);
-  padding: 0.08rem 0.4rem;
-  font-size: 0.58rem;
-  letter-spacing: 0.08em;
+background: var(–surface2);
+border: 1px solid var(–gold-dim);
+color: var(–gold);
+padding: 0.08rem 0.4rem;
+font-size: 0.58rem;
+letter-spacing: 0.08em;
 }
 
 .today-badge {
-  display: inline-block;
-  background: var(--pink);
-  color: #fff;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  padding: 0.1rem 0.5rem;
-  animation: badgePop 0.7s cubic-bezier(0.34,1.56,0.64,1) 0.1s both;
+display: inline-block;
+background: var(–pink);
+color: #fff;
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 0.65rem;
+letter-spacing: 0.14em;
+padding: 0.1rem 0.5rem;
+animation: badgePop 0.7s cubic-bezier(0.34,1.56,0.64,1) 0.1s both;
 }
 @keyframes badgePop {
-  from { transform: scale(0.3); opacity: 0; }
-  to   { transform: scale(1);   opacity: 1; }
+from { transform: scale(0.3); opacity: 0; }
+to   { transform: scale(1);   opacity: 1; }
 }
 
 .card-name {
-  font-family: 'Noto Serif JP', serif;
-  font-size: clamp(0.88rem, 2.2vw, 1rem);
-  font-weight: 400;
-  color: var(--text);
-  line-height: 1.45;
-  margin-bottom: 0.25rem;
+font-family: ‘Noto Serif JP’, serif;
+font-size: clamp(0.88rem, 2.2vw, 1rem);
+font-weight: 400;
+color: var(–text);
+line-height: 1.45;
+margin-bottom: 0.25rem;
 }
-.card-date { font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.04em; }
+.card-date { font-size: 0.7rem; color: var(–text-dim); letter-spacing: 0.04em; }
 .close-d { color: #7a6030; }
 
 .card-right { text-align: right; flex-shrink: 0; min-width: 80px; }
 .days-n {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(1.8rem, 5vw, 2.5rem);
-  line-height: 1;
-  letter-spacing: 0.03em;
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(1.8rem, 5vw, 2.5rem);
+line-height: 1;
+letter-spacing: 0.03em;
 }
-.cl-today   .days-n { color: var(--pink);       font-size: clamp(1.2rem,3.5vw,1.7rem); }
-.cl-recent  .days-n { color: var(--green); }
-.cl-mid     .days-n { color: var(--gold-light); }
-.cl-old     .days-n { color: var(--orange); }
-.cl-ancient .days-n { color: var(--red); }
-.days-l { font-size: 0.6rem; color: var(--text-dim); letter-spacing: 0.1em; margin-top: 0.1rem; }
-.years-l { font-size: 0.62rem; color: var(--text-dim); letter-spacing: 0.04em; }
+.cl-today   .days-n { color: var(–pink);       font-size: clamp(1.2rem,3.5vw,1.7rem); }
+.cl-recent  .days-n { color: var(–green); }
+.cl-mid     .days-n { color: var(–gold-light); }
+.cl-old     .days-n { color: var(–orange); }
+.cl-ancient .days-n { color: var(–red); }
+.days-l { font-size: 0.6rem; color: var(–text-dim); letter-spacing: 0.1em; margin-top: 0.1rem; }
+.years-l { font-size: 0.62rem; color: var(–text-dim); letter-spacing: 0.04em; }
 
 .card-detail {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  border-top: 0px solid rgba(201,168,76,0.12);
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease;
+border-top: 0px solid rgba(201,168,76,0.12);
 }
 .card.open .card-detail {
-  max-height: 2000px;
-  border-top: 1px solid rgba(201,168,76,0.12);
+max-height: 2000px;
+border-top: 1px solid rgba(201,168,76,0.12);
 }
-.card.open { border-left-color: var(--gold) !important; }
+.card.open { border-left-color: var(–gold) !important; }
 
 .detail-inner {
-  padding: 0.9rem 1.2rem 1.1rem;
-  font-size: 0.76rem;
-  color: var(--text-dim);
-  line-height: 1.9;
-  letter-spacing: 0.04em;
+padding: 0.9rem 1.2rem 1.1rem;
+font-size: 0.76rem;
+color: var(–text-dim);
+line-height: 1.9;
+letter-spacing: 0.04em;
 }
 
 .sub-list { margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.4rem; }
 .sub-item {
-  background: var(--surface2);
-  border-left: 2px solid var(--gold-dim);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.72rem;
-  line-height: 1.7;
+background: var(–surface2);
+border-left: 2px solid var(–gold-dim);
+padding: 0.5rem 0.75rem;
+font-size: 0.72rem;
+line-height: 1.7;
 }
-.sub-item b { display: block; color: var(--text); font-weight: 400; margin-bottom: 0.1rem; letter-spacing: 0.03em; }
-.sub-item span { color: var(--text-dim); }
+.sub-item b { display: block; color: var(–text); font-weight: 400; margin-bottom: 0.1rem; letter-spacing: 0.03em; }
+.sub-item span { color: var(–text-dim); }
 
 .expand-hint {
-  padding: 0.3rem 1.2rem 0.4rem;
-  font-size: 0.6rem;
-  color: var(--text-dim);
-  letter-spacing: 0.1em;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-  text-align: right;
+padding: 0.3rem 1.2rem 0.4rem;
+font-size: 0.6rem;
+color: var(–text-dim);
+letter-spacing: 0.1em;
+opacity: 0.5;
+transition: opacity 0.2s;
+text-align: right;
 }
 .card:hover .expand-hint { opacity: 1; }
 .card.open .expand-hint { display: none; }
 
-.no-res { text-align: center; padding: 3rem; color: var(--text-dim); font-size: 0.82rem; }
+.no-res { text-align: center; padding: 3rem; color: var(–text-dim); font-size: 0.82rem; }
 
 footer {
-  margin-top: 3rem;
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--gold-dim);
-  text-align: center;
-  font-size: 0.64rem;
-  color: var(--text-dim);
-  letter-spacing: 0.07em;
-  line-height: 2.2;
+margin-top: 3rem;
+padding-top: 1.2rem;
+border-top: 1px solid var(–gold-dim);
+text-align: center;
+font-size: 0.64rem;
+color: var(–text-dim);
+letter-spacing: 0.07em;
+line-height: 2.2;
 }
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--gold-dim); }
+::-webkit-scrollbar-track { background: var(–bg); }
+::-webkit-scrollbar-thumb { background: var(–gold-dim); }
 </style>
+
 </head>
 <body>
 <div class="container">
@@ -323,7 +325,6 @@ footer {
 
 </div>
 <script>
-// 今日の日付をブラウザから取得
 const todayStr = (function() {
   const d = new Date();
   const y = d.getFullYear();
@@ -333,254 +334,242 @@ const todayStr = (function() {
 })();
 
 function daysSince(s) {
-  const a = new Date(s + 'T00:00:00');
-  const b = new Date(todayStr + 'T00:00:00');
-  return Math.round((b-a)/86400000);
+const a = new Date(s + ‘T00:00:00’);
+const b = new Date(todayStr + ‘T00:00:00’);
+return Math.round((b-a)/86400000);
 }
 function ageCls(n) {
-  if (n===0) return 'cl-today';
-  if (n<365) return 'cl-recent';
-  if (n<365*3) return 'cl-mid';
-  if (n<365*12) return 'cl-old';
-  return 'cl-ancient';
+if (n===0) return ‘cl-today’;
+if (n<365) return ‘cl-recent’;
+if (n<365*3) return ‘cl-mid’;
+if (n<365*12) return ‘cl-old’;
+return ‘cl-ancient’;
 }
 
 const DATA = [
-  {
-    name: 'セサミストリート・ファン・ワールド',
-    area: 'ユニバーサル・ワンダーランド',
-    closeDate: '2026-05-10',
-    openDate:  '2012-03-16',
-    overview: '2012年3月16日のユニバーサル・ワンダーランド開業と同時にオープン。エルモ・クッキーモンスター・ビッグバード・アーニーなど人気キャラクターの屋内外アトラクションを揃えた、ワンダーランド内最大のゾーン。14年間、子どもたちの笑顔と家族の思い出を作り続けた。特別イベント「フォーエバー・フレンズ ～ずっと友だち～」（2026年3月20日〜5月10日）で有終の美を飾り、最終日を迎えた。',
-    subs: [
-      { name: 'エルモのゴーゴー・スケートボード', desc: '2015年に新設されたライド型アトラクション。エルモをモチーフにしたスケートボード型ライドが斜面を高速で駆け抜ける。身長制限あり（付き添いなし：122cm以上 / 付き添いあり：92cm以上）。' },
-      { name: 'モッピーのバルーン・トリップ', desc: '2015年新設。USJ限定キャラクター「モッピー」のバルーン（風船）に乗って空を旅するフライングライド。ゲストが自分でハンドルを操作して回転させることができる仕組みになっていた。' },
-      { name: 'エルモのバブルバブル', desc: '金魚のドロシーをモチーフにしたライドで水上をゆっくり周回するウォーターライド。道中でエルモがシャボン玉を作ってくれる幻想的な演出が人気。身長制限あり（92cm以上）。エルモのイマジネーション・プレイランド内に位置する。' },
-      { name: 'セサミのビッグ・ドライブ', desc: 'セサミストリートのキャラクターをモチーフにした乗り物でエリア内を走るゴーカート型アトラクション。コロナ禍（2020年6月19日）より休止のまま今回終了を迎えた。' },
-      { name: 'アーニーのラバーダッキー・レース', desc: 'アーニーお気に入りのアヒルのおもちゃを人工の川に流してレースを楽しむプレイランド。流したアヒルの動きを眺めながら楽しむ穏やかなアトラクションで、コロナ禍（2020年6月19日）より休止のまま終了。' },
-      { name: 'クッキーモンスター・スライド', desc: 'クッキーモンスターの大きな口をイメージした滑り台アクティビティ。クッキーの敷物をお尻に敷いてベロをイメージした面を滑り降りる。大人と一緒のほうが勢いが出てよく滑ると評判だった。' },
-      { name: 'エルモのイマジネーション・プレイランド', desc: 'エルモのバブルバブルを含む大型屋内プレイゾーン。全6種のアトラクションと遊具を内包。床は柔らかい素材で転倒しても安心な設計。上階は貝やサンゴで飾られ、ゆらめく照明で水中にいるような雰囲気を演出していた。' },
-      { name: 'ウォーター・ガーデン', desc: '地面から水が飛び出す噴水や滝など、水と触れ合いながら遊べる屋外プレイエリア。3〜9歳推奨。夏は水に濡れながら大はしゃぎできる子ども人気No.1スポットだった。' },
-      { name: 'アビーのマジカル・ツリー', desc: '目の前にに広がるジャングルジム型アトラクション。6〜12歳向け。ロープや登り棒、滑り台が連なる本格的な造りで、アビーの木を探検できた。' },
-      { name: 'アビーのマジカル・パーティ', desc: '大きな星型のブロックやバルーンを使って自由に遊ぶ3〜6歳向けの屋内プレイランド。きらびやかなホールがアビーの魔法でデコレーションされ、ブロックに登ったりバルーンを投げたりして体を動かせた。' },
-      { name: 'モッピーのラッキー・ダンス・パーティ', desc: 'ユニバーサル・ワンダーランド唯一のショー形式アトラクションで、一日に数回開催。DJが教えてくれるダンスをみんなで一緒に踊り、元気よく踊れるとご褒美がもらえる参加型ショー。' },
-      { name: 'エルモのリトルドライブ', desc: 'エルモやセサミストリートのキャラクターを模したゴーカートに乗り、運転を体験できるゴーカート型アトラクション。ビッグドライブとは異なりコロナ禍以降も運営され5月10日にクローズ。' },
-    ]
-  },
-  {
-    name: 'スヌーピー・サウンド・ステージ・アドベンチャー',
-    area: 'ユニバーサル・ワンダーランド',
-    closeDate: '2023-11-13',
-    openDate:  '2001-03-31',
-    overview: '開業当初から22年以上運営し続けた屋内型プレイランド。スヌーピーたちの映画スタジオが舞台で、ゲストが映画監督となり道具や音楽を使ってオリジナル映画の制作を体験できる施設だった。2023年11月13日より大規模改修工事のため運営休止、そのまま終了。',
-    subs: []
-  },
-  {
-    name: 'スヌーピーのグレート・レース',
-    area: 'ユニバーサル・ワンダーランド',
-    closeDate: '2021-12-31',
-    openDate:  '2012-03-16',
-    overview: '映画の撮影を体験できるコースター型アトラクション。2021年末に終了。',
-    subs: []
-  },
-  {
-    name: 'ペパーミントパティのスタント・スライド',
-    area: 'ユニバーサル・ワンダーランド',
-    closeDate: '2013-02-28',
-    openDate:  '2001-03-31',
-    overview: '開業当初からスヌーピー・スタジオエリアに設置されていた屋外ウォータースライダー。高所からゴムボートで滑り降りる急流すべりで、服がびしょ濡れになるためすぐ隣にヒーターも設置されていた。ユニバーサル・ワンダーランドへのリニューアルに伴い終了。',
-    subs: []
-  },
-  {
-    name: 'アメージング・アドベンチャー・オブ・スパイダーマン・ザ・ライド 4K3D',
-    area: 'ニューヨーク・エリア',
-    closeDate: '2024-01-22',
-    openDate:  '2004-01-23',
-    overview: '超高精細4K3D映像・ライドモーション・100種以上の特殊効果が完全同期するライドアトラクション。スパイダーマンとともにニューヨークの街を駆け抜けるスリルが人気で、史上初の7年連続世界No.1ライドを受賞。20年間で延べ1億人以上が体験した。2024年1月22日閉幕。現在は跡地を解体・再開発中。',
-    subs: []
-  },
-  {
-    name: 'ターミネーター 2:3-D',
-    area: 'ハリウッド・エリア',
-    closeDate: '2024-01-22',
-    openDate:  '2001-03-31',
-    overview: '映画『ターミネーター2』の世界を体験できる3-Dシアター型アトラクション。開業日から運営したUSJ初期の人気作。コロナ禍の2020年9月から休止し、再開することなく2024年1月22日に閉幕。跡地は「名探偵コナン 4-Dライブ・ショー ～星空の宝石(ジュエル)～」に。',
-    subs: []
-  },
-  {
-    name: 'バックドラフト',
-    area: 'サンフランシスコ・エリア',
-    closeDate: '2024-01-22',
-    openDate:  '2001-03-31',
-    overview: '映画『バックドラフト』の大火災を再現したツアー型体験アトラクション。炎が広がる恐怖と映画撮影舞台裏の没入感が名物だった。コロナ禍（2020年9月14日）から休止のまま閉幕。跡地には2025年7月に「ミニオン・ハチャメチャ・ミッション ～大悪党への道～」がオープン。',
-    subs: []
-  },
-  {
-    name: 'アニメセレブレーション',
-    area: 'ハリウッド・エリア',
-    closeDate: '2016-01-10',
-    openDate:  '2013-03-15',
-    overview: 'ウッディ・ウッドペッカーの世界観を体験できるショー型アトラクション。',
-    subs: []
-  },
-  {
-    name: 'バック・トゥ・ザ・フューチャー・ザ・ライド',
-    area: 'サンフランシスコ・エリア',
-    closeDate: '2016-05-31',
-    openDate:  '2001-03-31',
-    overview: 'ドーム状の半球体スクリーン（オムニマックス）に映像を投影し、8人乗りデロリアン型の油圧制御ライドが映像と完全同期して上下左右に激しく動くシミュレーターライド。画面の枠がなく映像の中へ飛び込んでいくような没入感が特徴だった。開業から約15年・累計約5900万人が体験した伝説のアトラクション。跡地はミニオン・パーク（2017年開業）に。',
-    subs: []
-  },
-  {
-    name: 'E.T. アドベンチャー',
-    area: 'ハリウッド・エリア',
-    closeDate: '2009-04-19',
-    openDate:  '2001-03-31',
-    overview: 'スピルバーグ映画「E.T.」の世界を体験する自転車型フライングライド。月夜の空を飛んでE.Tの故郷へ向かうファンタジックな演出が名物で、開業から8年、多くのゲストに愛されて幕を閉じた。',
-    subs: []
-  },
-  {
-    name: 'E.T. アドベンチャー ザ・レジェンド',
-    area: 'ハリウッド・エリア',
-    closeDate: '2010-08-31',
-    openDate:  '2009-04-25',
-    overview: 'E.T.アドベンチャーのリニューアル後継版として登場したが、1年余りで終了。',
-    subs: []
-  },
-  {
-    name: 'テレビ・プロダクション・ツアー',
-    area: 'ハリウッド・エリア',
-    closeDate: '2004-07-31',
-    openDate:  '2001-03-31',
-    overview: 'USJパーク内に実在した毎日放送スタジオのバックステージを見学するウォークスルーツアー。「USJ内にテレビ局があった」という、今では信じられない珍エピソードの象徴。',
-    subs: []
-  },
-  {
-    name: 'ザ・ワイルド・ワイルド・ワイルド・ウエスト・スタント・ショー',
-    area: 'ウエスタンエリア（現ワンダーランド）',
-    closeDate: '2005-01-09',
-    openDate:  '2001-03-31',
-    overview: 'ハリウッド仕込みのキャストが演じる本格西部劇スタントショー。大規模な火薬・水・爆発演出が名物で、ウエスタンエリアの顔的存在だった。',
-    subs: []
-  },
-  {
-    name: 'アニマル・アクターズ・ステージ',
-    area: 'ウエスタンエリア（現ワンダーランド）',
-    closeDate: '2006-05-07',
-    openDate:  '2001-03-31',
-    overview: '犬・鳥・ポニー・チンパンジーなど本物の動物が演じる人気の動物ショー。ウエスタンエリア終了（2006年5月7日）と同時に閉幕した。',
-    subs: []
-  },
-  {
-    name: 'ウィケッド（ランド・オブ・オズ）',
-    area: 'ランド・オブ・オズ（現ワンダーランド）',
-    closeDate: '2011-01-10',
-    openDate:  '2006-07-12',
-    overview: 'エメラルドシアターで上演されたブロードウェイミュージカル「ウィケッド」短縮版。緑の外観と黄色いレンガ道が印象的なランド・オブ・オズの目玉ショー。本格的な生歌が好評だった。',
-    subs: []
-  },
-  {
-    name: 'マジカル・オズ・ゴーラウンド',
-    area: 'ランド・オブ・オズ（現ワンダーランド）',
-    closeDate: '2011-02-15',
-    openDate:  '2006-07-12',
-    overview: 'オズの登場人物がデザインされたメリーゴーラウンド。現在は乗り物をリニューアルして「ビッグバードのビッグトップサーカス」として運営継続中。',
-    subs: []
-  }
+{
+name: ‘セサミストリート・ファン・ワールド’,
+area: ‘ユニバーサル・ワンダーランド’,
+closeDate: ‘2026-05-10’,
+openDate:  ‘2012-03-16’,
+overview: ‘2012年3月16日のユニバーサル・ワンダーランド開業と同時にオープン。エルモ・クッキーモンスター・ビッグバード・アーニーなど人気キャラクターの屋内外アトラクションを揃えた、ワンダーランド内最大のゾーン。14年間、子どもたちの笑顔と家族の思い出を作り続けた。特別イベント「フォーエバー・フレンズ ～ずっと友だち～」（2026年3月20日〜5月10日）で有終の美を飾り、最終日を迎えた。’,
+subs: [
+{ name: ‘エルモのゴーゴー・スケートボード’, desc: ‘2015年に新設されたライド型アトラクション。エルモをモチーフにしたスケートボード型ライドが斜面を高速で駆け抜ける。身長制限あり（付き添いなし：122cm以上 / 付き添いあり：92cm以上）。’ },
+{ name: ‘モッピーのバルーン・トリップ’, desc: ‘2015年新設。USJ限定キャラクター「モッピー」のバルーン（風船）に乗って空を旅するフライングライド。ゲストが自分でハンドルを操作して回転させることができる仕組みになっていた。’ },
+{ name: ‘エルモのバブルバブル’, desc: ‘金魚のドロシーをモチーフにしたライドで水上をゆっくり周回するウォーターライド。道中でエルモがシャボン玉を作ってくれる幻想的な演出が人気。身長制限あり（92cm以上）。エルモのイマジネーション・プレイランド内に位置する。’ },
+{ name: ‘セサミのビッグ・ドライブ’, desc: ‘セサミストリートのキャラクターをモチーフにした乗り物でエリア内を走るゴーカート型アトラクション。コロナ禍（2020年6月19日）より休止のまま今回終了を迎えた。’ },
+{ name: ‘アーニーのラバーダッキー・レース’, desc: ‘アーニーお気に入りのアヒルのおもちゃを人工の川に流してレースを楽しむプレイランド。流したアヒルの動きを眺めながら楽しむ穏やかなアトラクションで、コロナ禍（2020年6月19日）より休止のまま終了。’ },
+{ name: ‘クッキーモンスター・スライド’, desc: ‘クッキーモンスターの大きな口をイメージした滑り台アクティビティ。クッキーの敷物をお尻に敷いてベロをイメージした面を滑り降りる。大人と一緒のほうが勢いが出てよく滑ると評判だった。’ },
+{ name: ‘エルモのイマジネーション・プレイランド’, desc: ‘エルモのバブルバブルを含む大型屋内プレイゾーン。全6種のアトラクションと遊具を内包。床は柔らかい素材で転倒しても安心な設計。上階は貝やサンゴで飾られ、ゆらめく照明で水中にいるような雰囲気を演出していた。’ },
+{ name: ‘ウォーター・ガーデン’, desc: ‘地面から水が飛び出す噴水や滝など、水と触れ合いながら遊べる屋外プレイエリア。3〜9歳推奨。夏は水に濡れながら大はしゃぎできる子ども人気No.1スポットだった。’ },
+{ name: ‘アビーのマジカル・ツリー’, desc: ‘目の前に広がるジャングルジム型アトラクション。6〜12歳向け。ロープや登り棒、滑り台が連なる本格的な造りで、アビーの木を探検できた。’ },
+{ name: ‘アビーのマジカル・パーティ’, desc: ‘大きな星型のブロックやバルーンを使って自由に遊ぶ3〜6歳向けの屋内プレイランド。きらびやかなホールがアビーの魔法でデコレーションされ、ブロックに登ったりバルーンを投げたりして体を動かせた。’ },
+{ name: ‘モッピーのラッキー・ダンス・パーティ’, desc: ‘ユニバーサル・ワンダーランド唯一のショー形式アトラクションで、一日に数回開催。DJが教えてくれるダンスをみんなで一緒に踊り、元気よく踊れるとご褒美がもらえる参加型ショー。’ },
+{ name: ‘エルモのリトルドライブ’, desc: ‘エルモやセサミストリートのキャラクターを模したゴーカートに乗り、運転を体験できるゴーカート型アトラクション。ビッグドライブとは異なりコロナ禍以降も運営され5月10日にクローズ。’ },
+]
+},
+{
+name: ‘スヌーピー・サウンド・ステージ・アドベンチャー’,
+area: ‘ユニバーサル・ワンダーランド’,
+closeDate: ‘2023-11-13’,
+openDate:  ‘2001-03-31’,
+overview: ‘開業当初から22年以上運営し続けた屋内型プレイランド。スヌーピーたちの映画スタジオが舞台で、ゲストが映画監督となり道具や音楽を使ってオリジナル映画の制作を体験できる施設だった。2023年11月13日より大規模改修工事のため運営休止、そのまま終了。’,
+subs: []
+},
+{
+name: ‘スヌーピーのグレート・レース’,
+area: ‘ユニバーサル・ワンダーランド’,
+closeDate: ‘2021-12-31’,
+openDate:  ‘2012-03-16’,
+overview: ‘映画の撮影を体験できるコースター型アトラクション。2021年末に終了。’,
+subs: []
+},
+{
+name: ‘ペパーミントパティのスタント・スライド’,
+area: ‘ユニバーサル・ワンダーランド’,
+closeDate: ‘2013-02-28’,
+openDate:  ‘2001-03-31’,
+overview: ‘開業当初からスヌーピー・スタジオエリアに設置されていた屋外ウォータースライダー。高所からゴムボートで滑り降りる急流すべりで、服がびしょ濡れになるためすぐ隣にヒーターも設置されていた。ユニバーサル・ワンダーランドへのリニューアルに伴い終了。’,
+subs: []
+},
+{
+name: ‘アメージング・アドベンチャー・オブ・スパイダーマン・ザ・ライド 4K3D’,
+area: ‘ニューヨーク・エリア’,
+closeDate: ‘2024-01-22’,
+openDate:  ‘2004-01-23’,
+overview: ‘超高精細4K3D映像・ライドモーション・100種以上の特殊効果が完全同期するライドアトラクション。スパイダーマンとともにニューヨークの街を駆け抜けるスリルが人気で、史上初の7年連続世界No.1ライドを受賞。20年間で延べ1億人以上が体験した。2024年1月22日閉幕。現在は跡地を解体・再開発中。’,
+subs: []
+},
+{
+name: ‘ターミネーター 2:3-D’,
+area: ‘ハリウッド・エリア’,
+closeDate: ‘2024-01-22’,
+openDate:  ‘2001-03-31’,
+overview: ‘映画『ターミネーター2』の世界を体験できる3-Dシアター型アトラクション。開業日から運営したUSJ初期の人気作。コロナ禍の2020年9月から休止し、再開することなく2024年1月22日に閉幕。跡地は「名探偵コナン 4-Dライブ・ショー ～星空の宝石(ジュエル)～」に。’,
+subs: []
+},
+{
+name: ‘バックドラフト’,
+area: ‘サンフランシスコ・エリア’,
+closeDate: ‘2024-01-22’,
+openDate:  ‘2001-03-31’,
+overview: ‘映画『バックドラフト』の大火災を再現したツアー型体験アトラクション。炎が広がる恐怖と映画撮影舞台裏の没入感が名物だった。コロナ禍（2020年9月14日）から休止のまま閉幕。跡地には2025年7月に「ミニオン・ハチャメチャ・ミッション ～大悪党への道～」がオープン。’,
+subs: []
+},
+{
+name: ‘アニメセレブレーション’,
+area: ‘ハリウッド・エリア’,
+closeDate: ‘2016-01-10’,
+openDate:  ‘2013-03-15’,
+overview: ‘ウッディ・ウッドペッカーの世界観を体験できるショー型アトラクション。’,
+subs: []
+},
+{
+name: ‘バック・トゥ・ザ・フューチャー・ザ・ライド’,
+area: ‘サンフランシスコ・エリア’,
+closeDate: ‘2016-05-31’,
+openDate:  ‘2001-03-31’,
+overview: ‘ドーム状の半球体スクリーン（オムニマックス）に映像を投影し、8人乗りデロリアン型の油圧制御ライドが映像と完全同期して上下左右に激しく動くシミュレーターライド。画面の枠がなく映像の中へ飛び込んでいくような没入感が特徴だった。開業から約15年・累計約5900万人が体験した伝説のアトラクション。跡地はミニオン・パーク（2017年開業）に。’,
+subs: []
+},
+{
+name: ‘E.T. アドベンチャー’,
+area: ‘ハリウッド・エリア’,
+closeDate: ‘2009-04-19’,
+openDate:  ‘2001-03-31’,
+overview: ‘スピルバーグ映画「E.T.」の世界を体験する自転車型フライングライド。月夜の空を飛んでE.Tの故郷へ向かうファンタジックな演出が名物で、開業から8年、多くのゲストに愛されて幕を閉じた。’,
+subs: []
+},
+{
+name: ‘E.T. アドベンチャー ザ・レジェンド’,
+area: ‘ハリウッド・エリア’,
+closeDate: ‘2010-08-31’,
+openDate:  ‘2009-04-25’,
+overview: ‘E.T.アドベンチャーのリニューアル後継版として登場したが、1年余りで終了。’,
+subs: []
+},
+{
+name: ‘テレビ・プロダクション・ツアー’,
+area: ‘ハリウッド・エリア’,
+closeDate: ‘2004-07-31’,
+openDate:  ‘2001-03-31’,
+overview: ‘USJパーク内に実在した毎日放送スタジオのバックステージを見学するウォークスルーツアー。「USJ内にテレビ局があった」という、今では信じられない珍エピソードの象徴。’,
+subs: []
+},
+{
+name: ‘ザ・ワイルド・ワイルド・ワイルド・ウエスト・スタント・ショー’,
+area: ‘ウエスタンエリア（現ワンダーランド）’,
+closeDate: ‘2005-01-09’,
+openDate:  ‘2001-03-31’,
+overview: ‘ハリウッド仕込みのキャストが演じる本格西部劇スタントショー。大規模な火薬・水・爆発演出が名物で、ウエスタンエリアの顔的存在だった。’,
+subs: []
+},
+{
+name: ‘アニマル・アクターズ・ステージ’,
+area: ‘ウエスタンエリア（現ワンダーランド）’,
+closeDate: ‘2006-05-07’,
+openDate:  ‘2001-03-31’,
+overview: ‘犬・鳥・ポニー・チンパンジーなど本物の動物が演じる人気の動物ショー。ウエスタンエリア終了（2006年5月7日）と同時に閉幕した。’,
+subs: []
+},
+{
+name: ‘ウィケッド（ランド・オブ・オズ）’,
+area: ‘ランド・オブ・オズ（現ワンダーランド）’,
+closeDate: ‘2011-01-10’,
+openDate:  ‘2006-07-12’,
+overview: ‘エメラルドシアターで上演されたブロードウェイミュージカル「ウィケッド」短縮版。緑の外観と黄色いレンガ道が印象的なランド・オブ・オズの目玉ショー。本格的な生歌が好評だった。’,
+subs: []
+},
+{
+name: ‘マジカル・オズ・ゴーラウンド’,
+area: ‘ランド・オブ・オズ（現ワンダーランド）’,
+closeDate: ‘2011-02-15’,
+openDate:  ‘2006-07-12’,
+overview: ‘オズの登場人物がデザインされたメリーゴーラウンド。現在は乗り物をリニューアルして「ビッグバードのビッグトップサーカス」として運営継続中。’,
+subs: []
+}
 ];
 
-const AREAS = ['すべて', ...new Set(DATA.map(d=>d.area))];
-let curFilter = 'すべて';
-let curSort   = 'days';
+const AREAS = [‘すべて’, …new Set(DATA.map(d=>d.area))];
+let curFilter = ‘すべて’;
+let curSort   = ‘days’;
 
 function setSort(s) {
-  curSort = s;
-  document.querySelectorAll('.sbtn').forEach(b=>b.classList.remove('on'));
-  document.getElementById('sb-'+s).classList.add('on');
-  render();
+curSort = s;
+document.querySelectorAll(’.sbtn’).forEach(b=>b.classList.remove(‘on’));
+document.getElementById(‘sb-’+s).classList.add(‘on’);
+render();
 }
 function setFilter(a) {
-  curFilter = a;
-  document.querySelectorAll('.fbtn').forEach(b=>
-    b.classList.toggle('on', b.dataset.area===a)
-  );
-  render();
+curFilter = a;
+document.querySelectorAll(’.fbtn’).forEach(b=>
+b.classList.toggle(‘on’, b.dataset.area===a)
+);
+render();
 }
 
 function buildFilters() {
-  document.getElementById('filters').innerHTML = AREAS.map(a =>
-    `<button class="fbtn${a==='すべて'?' on':''}" data-area="${a}" onclick="setFilter(this.dataset.area)">${a}</button>`
-  ).join('');
+document.getElementById(‘filters’).innerHTML = AREAS.map(a =>
+`<button class="fbtn${a==='すべて'?' on':''}" data-area="${a}" onclick="setFilter(this.dataset.area)">${a}</button>`
+).join(’’);
 }
 
 function buildStats() {
-  const total = DATA.length;
-  const days  = DATA.map(d=>daysSince(d.closeDate));
-  const avg   = Math.round(days.reduce((s,d)=>s+d,0)/total);
-  const mx    = Math.max(...days);
-  const todayCnt = days.filter(d=>d===0).length;
-  document.getElementById('stats-wrap').innerHTML = `<div class="stat"><div class="stat-n">${total}</div><div class="stat-l">閉幕数</div></div> <div class="stat"><div class="stat-n">${mx.toLocaleString()}</div><div class="stat-l">最長経過(日)</div></div> <div class="stat"><div class="stat-n">${avg.toLocaleString()}</div><div class="stat-l">平均経過(日)</div></div> <div class="stat"><div class="stat-n" style="color:var(--pink)">${todayCnt}</div><div class="stat-l">本日クローズ🎗</div></div>`;
+const total = DATA.reduce((s, d) => s + 1 + d.subs.length, 0);
+const days  = DATA.map(d=>daysSince(d.closeDate));
+const avg   = Math.round(days.reduce((s,d)=>s+d,0)/days.length);
+const mx    = Math.max(…days);
+const todayCnt = days.filter(d=>d===0).length;
+document.getElementById(‘stats-wrap’).innerHTML = `<div class="stat"><div class="stat-n">${total}</div><div class="stat-l">閉幕数</div></div><div class="stat"><div class="stat-n">${mx.toLocaleString()}</div><div class="stat-l">最長経過(日)</div></div><div class="stat"><div class="stat-n">${avg.toLocaleString()}</div><div class="stat-l">平均経過(日)</div></div><div class="stat"><div class="stat-n" style="color:var(--pink)">${todayCnt}</div><div class="stat-l">本日クローズ🎗</div></div>`;
 }
 
-function fmtD(s){ return s.replace(/-/g,'/'); }
-function wday(s){ return new Date(s+'T00:00:00').toLocaleDateString('ja-JP',{weekday:'short'}); }
+function fmtD(s){ return s.replace(/-/g,’/’); }
+function wday(s){ return new Date(s+‘T00:00:00’).toLocaleDateString(‘ja-JP’,{weekday:‘short’}); }
 
 function render() {
-  const q = document.getElementById('q').value.toLowerCase();
-  let list = DATA.filter(d=>{
-    const okA = curFilter==='すべて' || d.area===curFilter;
-    const okQ = !q || d.name.toLowerCase().includes(q) || d.area.toLowerCase().includes(q);
-    return okA && okQ;
-  });
-  if (curSort==='days') list.sort((a,b)=>daysSince(b.closeDate)-daysSince(a.closeDate));
-  else if (curSort==='name') list.sort((a,b)=>a.name.localeCompare(b.name,'ja'));
-  else list.sort((a,b)=>new Date(b.closeDate)-new Date(a.closeDate));
+const q = document.getElementById(‘q’).value.toLowerCase();
+let list = DATA.filter(d=>{
+const okA = curFilter===‘すべて’ || d.area===curFilter;
+const okQ = !q || d.name.toLowerCase().includes(q) || d.area.toLowerCase().includes(q);
+return okA && okQ;
+});
+if (curSort===‘days’) list.sort((a,b)=>daysSince(b.closeDate)-daysSince(a.closeDate));
+else if (curSort===‘name’) list.sort((a,b)=>a.name.localeCompare(b.name,‘ja’));
+else list.sort((a,b)=>new Date(b.closeDate)-new Date(a.closeDate));
 
-  document.getElementById('cnt').innerHTML = `<b>${list.length}</b> 件を表示`;
+document.getElementById(‘cnt’).innerHTML = `<b>${list.length}</b> 件を表示`;
 
-  if(!list.length){
-    document.getElementById('cards').innerHTML='<div class="no-res">該当なし</div>';
-    return;
-  }
+if(!list.length){
+document.getElementById(‘cards’).innerHTML=’<div class="no-res">該当なし</div>’;
+return;
+}
 
-  document.getElementById('cards').innerHTML = list.map((d,i)=>{
-    const days = daysSince(d.closeDate);
-    const cls  = ageCls(days);
-    const isToday = days===0;
+document.getElementById(‘cards’).innerHTML = list.map((d,i)=>{
+const days = daysSince(d.closeDate);
+const cls  = ageCls(days);
+const isToday = days===0;
 
-    const oy = d.openDate ? new Date(d.openDate).getFullYear() : null;
-    const cy = new Date(d.closeDate).getFullYear();
-    const rt = oy ? `${oy}〜${cy}年` : `〜${cy}年`;
+```
+const oy = d.openDate ? new Date(d.openDate).getFullYear() : null;
+const cy = new Date(d.closeDate).getFullYear();
+const rt = oy ? `${oy}〜${cy}年` : `〜${cy}年`;
 
-    const badge = isToday ? `<span class="today-badge">本日最終日</span>` : '';
+const badge = isToday ? `<span class="today-badge">本日最終日</span>` : '';
 
-    let numBlock;
-    if(isToday){
-      numBlock = `<div class="days-n">TODAY</div><div class="days-l">本日クローズ</div>`;
-    } else {
-      const yr = (days/365.25).toFixed(1);
-      numBlock = `<div class="days-n">${days.toLocaleString()}</div><div class="days-l">DAYS AGO</div><div class="years-l">${yr}年前</div>`;
-    }
+let numBlock;
+if(isToday){
+  numBlock = `<div class="days-n">TODAY</div><div class="days-l">本日クローズ</div>`;
+} else {
+  const yr = (days/365.25).toFixed(1);
+  numBlock = `<div class="days-n">${days.toLocaleString()}</div><div class="days-l">DAYS AGO</div><div class="years-l">${yr}年前</div>`;
+}
 
-    const subsHtml = d.subs.length ? `<div class="sub-list">${
-      d.subs.map(s=>`<div class="sub-item"><b>▸ ${s.name}</b><span>${s.desc}</span></div>`).join('')
-    }</div>` : '';
+const subsHtml = d.subs.length ? `<div class="sub-list">${d.subs.map(s=>`<div class="sub-item"><b>▸ ${s.name}</b><span>${s.desc}</span></div>`).join('')}</div>` : '';
 
-    return `<div class="card ${cls}" onclick="this.classList.toggle('open')">
-      <div class="card-top">
-        <div>
-          <div class="card-era"><span>${d.area}</span><span class="tag">${rt}</span>${badge}</div>
-          <div class="card-name">${d.name}</div>
-          <div class="card-date">クローズ：<span class="close-d">${fmtD(d.closeDate)}（${wday(d.closeDate)}）</span></div>
-        </div>
-        <div class="card-right">${numBlock}</div>
-      </div>
-      <div class="card-detail">
-        <div class="detail-inner"><p>${d.overview}</p>${subsHtml}</div>
-      </div>
-      <div class="expand-hint">▼ タップで詳細・アトラクション一覧</div>
-    </div>`;
-  }).join('');
+return `<div class="card ${cls}" onclick="this.classList.toggle('open')"><div class="card-top"><div><div class="card-era"><span>${d.area}</span><span class="tag">${rt}</span>${badge}</div><div class="card-name">${d.name}</div><div class="card-date">クローズ：<span class="close-d">${fmtD(d.closeDate)}（${wday(d.closeDate)}）</span></div></div><div class="card-right">${numBlock}</div></div><div class="card-detail"><div class="detail-inner"><p>${d.overview}</p>${subsHtml}</div></div><div class="expand-hint">▼ タップで詳細・アトラクション一覧</div></div>`;
+```
+
+}).join(’’);
 }
 
 buildFilters();
